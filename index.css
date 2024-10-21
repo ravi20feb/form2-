@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+p{
+    color: #EAEEED;
+    
+}
+input{
+    outline: none;
+    width: 350px;
+    height: 35px;
+    border: none;
+    padding-left: 5px;
+    background: #EAEEED;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #fff;
+    background: #38AA95;
+    border: 1px solid #fff;
+    margin-top: 50px;
+}
+
+.hero_box{
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background:  #EAEEED;
+    padding: 30px;
+    overflow: hidden;
+}  
+.hero_box .circle{
+    position: absolute;
+    bottom: -22%;
+    left:-15%;
+    /* transform: translate(-50%, -50%); */
+    height: 400px;
+    width: 400px;
+    border-radius: 200px 200px 200px 200px;
+    background-color: green;
+}
+.hero_box .triangle{
+    position: absolute;
+    top: -29%;
+    right: -15%;
+    /* transform: translate(-50%, -50%); */
+    /* height: 400px;
+    /* width: 400px; */ 
+    border-left:200px solid transparent ;
+    border-right:200px solid transparent ;
+    border-bottom: 400px solid ;
+    rotate: 10deg;
+
+}
+
+
+.hero_box .main_box{
+    position: relative;
+    height: calc(100vh - 60px);
+    border-radius: 5px; 
+    z-index: 1;
+}
+
+.hero_box .main_box::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* left_box start here */
+
+.hero_box .main_box .left_box{
+    display: flex; 
+    align-items: center;
+    padding: auto;
+    width: 500px;
+    float: left;
+    background-color: #38AA95;
+    opacity: .4;
+    color: white;
+    height: 100%;
+    
+}
+.hero_box .main_box .left_box div{
+    width: fit-content;
+    margin: auto;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* right_box start here */
+
+.hero_box .main_box .right_box{
+    height: 100%;
+    width: calc(100% - 500px);
+    float: right;
+    color: #38AA95;
+    background: #fff;
+
+    text-align: center;
+    padding-top: 60px;
+}
+.hero_box .main_box .right_box .social_sign{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.hero_box .main_box .right_box .social_sign span{
+    display: inline-block;
+    border-radius: 50%;
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    
+}
+.hero_box .main_box .right_box .form div{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding-left: 10px;
+    background: #EAEEED;
+}
+.hero_box .main_box .right_box .form .user::after{
+    content: "😊😊😊";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+    background: #000;
+}
+
+.hero_box .main_box .right_box .form span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
