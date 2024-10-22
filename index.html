@@ -10,54 +10,62 @@
     <div class="hero_box">
         <div class="main_box">
             <div class="left_box">
-                <div>
+                <div class="left_content" >
                     <h1>
                         Welcome Back
                     </h1>
                     <p>to Keep connected with us please <br> login with your personal information</p>
-                    <button type="button">Sign In</button>
                 </div>
-
+                <div class="logo">
+                    <span><img src="src/tree.png" alt="tree"></span>
+                    <h3>Diprella</h3>
+                </div>
+                <button  class="button" sign_in" type="button">Sign In</button>
             </div>
             <div class="right_box">
-                <h1>Create account</h1>
-                <div class="social_sign">
-                    <span>
-                        <img src="src/facebook.svg" alt="google">
-                    </span> 
-                    <span>
-                        <img src="src/google.svg" alt="google">
-                    </span> 
-                    <span>
-                        <img src="src/link.svg" alt="google">
-                    </span> 
-                </div>
-                <p>
-                    or use your email for registration
-                </p>
-                <from class="form" action="#">         
-                    <div>
-                        <span>
+                <div class="right_box_content">
+                    <h3>Create account</h3>
+                    <div class="social_sign">
+                        
+                        <ul>
+                            <li>
+                                <img src="src/facebook.svg" alt="google">
+                            </li> 
+                            <li>
+                                <img src="src/google.svg" alt="google">
+                            </li> 
+                            <li>
+                                <img src="src/link.svg" alt="google">
+                            </li>      
+                        </ul>
+                        
+                        
+                    </div>
+                    <p>
+                        or use your email for registration
+                    </p>
+                    <form class="form" action="#">         
+                        <div class="form_content">
                             <label for="user">
-                                <img src="src/user.png" width alt="google">
+                                <img src="src/user.png" id="user" width alt="google">
                             </label>
-                        </span>
-                        <input type="text" id="user" class="user" name="user" placeholder="Name" />
-                    </div>
-                    <div> 
-                        <span>
+                            
+                            <input type="text" id="user" class="user" name="user" placeholder="Name"  required/>
+                        </div>
+                        <div class="form_content"> 
                             <label for="email"><img src="src/email1.png" width alt="email"></label>
-                        </span>
-                        <input type="text" id="email" class="email" name="email" placeholder="email" />
-                    </div>
-                    <div>
-                        <span>
+                            <input type="email" id="email" class="email" name="email" placeholder="email" required/>
+                        </div>
+                        <div class="form_content">
                             <label for="password"><img src="src/password.png" width alt="password"></label>
-                        </span>
-                        <input type="text" id="password" class="password" name="password" placeholder="password" />
-                    </div> 
-                    <button>sign up</button>
-                </from>
+                            <input type="password" id="password" class="password" name="password" placeholder="password" required/>
+                        </div> 
+                        <div class="button">
+                            <button type="button">sign up</button>
+                        </div>
+                        
+                    </form>
+                </div>
             </div>
         </div>
         <div class="circle">
